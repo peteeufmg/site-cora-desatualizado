@@ -55,7 +55,7 @@ p {
 	border-style: solid;
     border-width: 2px;
     border-color:#000000;
-	
+
 }
 
 .btn:hover {
@@ -415,10 +415,14 @@ p {
 	/* background-color:green; */
 }
 
+
 .conteudoParceiros {
 	float:left;
 	width:100%;
-
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center
 	/* background-color:red; */
 }
 
@@ -427,12 +431,16 @@ p {
 	width:200px;
 	height:200px;
 	margin-bottom:50px;
-	margin-left:100px;
+	margin-left:50px;
+	margin-right:50px;
+
 }
 .iconParceiros_pet {
-	margin-left:380px;
+	float:left;
 	width:400px;
 	height:200px;
+	margin-bottom:50px;
+/*	margin-left:380px; */
 }
 
 .iconParceiros2 {
