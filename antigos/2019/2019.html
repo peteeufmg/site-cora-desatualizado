@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;">
+<html>
 	<head>
 		<meta charset="UTF-8">
 		<meta http-equiv="content-language" content="pt-br"/>
@@ -31,29 +31,36 @@
 
 	</head>
 
-	<body class="bg-success">
+	<body class="bg-dark">
 
 		<header>
-			<nav class="navbar fixed-top navbar-light bg-success navbar-expand-lg">
+			<nav class="navbar fixed-top navbar-dark bg-success navbar-expand-lg">
 				<a class="navbar-brand" href="#">
 					<img src="../../img/logo/logo_cora_branca_40px.png" alt="logo">
 				</a>
 				<div id="navbarSupportedContent" class="collapse navbar-collapse" >
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="btn btn-success btn-lg" href="../../index.html">Home</a>
+							<a class="btn btn-success btn-lg btn-block" href="../../index.html">Home</a>
 						</li>
-						<li class="nav-item active">
-							<a class="btn btn-success btn-lg" href="#">Última Edição</a>
+						<li class="nav-item dropdown active">
+							<a class="btn btn-success btn-lg btn-block dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Última Edição</a>
+							<div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#Premiacoes">Premiações</a>
+								<a class="dropdown-item" href="#Baterias">Baterias</a>
+								<a class="dropdown-item" href="#Local">Local</a>
+								<a class="dropdown-item" href="#Contato">Contato</a>
+								<a class="dropdown-item" href="#Realizacao">Organização</a>
+							</div>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-success btn-lg" href="http://www.petee.cpdee.ufmg.br/" target="_blank">PETEE-UFMG</a>
+							<a class="btn btn-success btn-lg btn-block" href="http://www.petee.cpdee.ufmg.br/" target="_blank">PETEE-UFMG</a>
 						</li>
 						<li class="nav-item">
-							<a class="btn btn-success btn-lg" href="#Apoio">Parceiros</a>
+							<a class="btn btn-success btn-lg btn-block" href="#Apoio">Parceiros</a>
 						</li>
-						  <li class="nav-item dropdown">
-							<a class="btn btn-success btn-lg" href="../../index.html#IconesPrincipais">Evento</a>
+						  <li class="nav-item">
+							<a class="btn btn-success btn-lg btn-block" href="../../index.html#Informacoes">Evento</a>
 						</li>
 					</ul>
 				</div>
@@ -68,8 +75,8 @@
 				
 		<div class="container-fluid bg-dark">
 
-			<div id="TextosPrincipais">
-				<div class="text-justify" style="padding-top: 100px">
+			<div id="TextosPrincipais" style="padding-top: 100px">
+				<div class="text-justify">
 					<hr class="bg-success">
 					<h4 class="text-center text-light"> Confira abaixo algumas informações sobre a 6ª edição da CoRA, ocorrida em 2019.</h4>
 					<hr class="bg-success">
@@ -77,9 +84,9 @@
                     <h3 class="text-justify text-light">A MNR trata-se de uma Mostra Científica de âmbito nacional, com o objetivo de expor e divulgar trabalhos na área da robótica, promovendo assim trocas de experiências, desenvolvimento  e aprimoramento de ideias e metodologias entre estudantes e pesquisadores.</h3>
                     <h3 class="text-justify text-light">Além de aproximar os jovens da ciência e tecnologia por meio de uma linguagem abrangente e inclusiva, a Mostra promove grande difusão da robótica por meio de um banco de dados on-line de atividades e instituições atuantes na área. Valorizando assim o conhecimento interdisciplinar e integrado.</h3>
                 </div>
-			</div><br>
+			</div>
 
-			<div id="Premiacoes">
+			<div id="Premiacoes" style="padding-top: 100px">
 				<div class="alert alert-success bg-dark">
 					<h3 class="text-center text-light">PREMIAÇÕES</h3>
 				</div>
@@ -120,7 +127,7 @@
 					<div class="col-4">
 						<div class="text-center" style="margin: 20px">
 							<img class="img-fluid" src="../../img/icon/medalha.png" alt="Arrancada">
-							<h3 class="text-light">DESAFIO ARRANCADA</h3>
+							<h4 class="text-light">DESAFIO ARRANCADA</h4>
 							<img class="img-fluid" src="../../img/fotos2019/JBL_arrancada.JPG" alt="Arrancada"> 
                             <h2 class="text-light">Equipe: JBL</h2>
                             <p class="text-light">R$ 100,00</p>
@@ -129,7 +136,7 @@
 					<div class="col-4">
 						<div class="text-center" style="margin: 20px">
 							<img class="img-fluid" src="../../img/icon/medalha.png" alt="Design">
-							<h3 class="text-light">MELHOR DESIGN</h3>
+							<h4 class="text-light">MELHOR DESIGN</h4>
 							<img class="img-fluid" src="../../img/fotos2019/Ohana_design.JPG" alt="Design">
                             <h2 class="text-light">Equipe: Ohana</h2>
                             <p class="text-light">R$ 100,00</p>
@@ -138,16 +145,78 @@
 					<div class="col-4">
 						<div class="text-center" style="margin: 20px">
 							<img class="img-fluid" src="../../img/icon/medalha.png" alt="Torcida">
-							<h3 class="text-light">MELHOR TORCIDA</h3>
+							<h4 class="text-light">MELHOR TORCIDA</h4>
 							<img class="img-fluid" src="../../img/fotos2019/Spirit_torcida.JPG" alt="Torcida">
 				            <h2 class="text-light">Equipe: Spirit</h2>
                             <p class="text-light">Cesta de Chocolates</p>
 						</div>
 					</div>
 				</div>
-			</div><br>
+			</div>
 
-			<div id="Local">
+			<div id="CarrosselBaterias -- COMENTADO">
+				<!-- <div class="alert alert-success bg-dark">
+					<h3 class="text-center text-light">BATERIAS</h3>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-4 col-xl-4" style="padding: 20px;">
+						<div id="carouselBaterias" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselBaterias" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselBaterias" data-slide-to="1"></li>
+								<li data-target="#carouselBaterias" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100 img-thumbnail" src="../../img/fotos2019/bateria1.jpg" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100 img-thumbnail" src="../../img/fotos2019/bateria2.jpg" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100 img-thumbnail" src="../../img/fotos2019/bateria3.jpg" alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselBaterias" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselBaterias" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-8 col-xl-8 text-light text-justify" style="padding: 20px;">
+						<h3>As Baterias da 6ª CoRA apresentavam os seguintes desafios:</h3><br>
+						<h3>Bateria 1: Loop, zigue-zague, parada final;</h3><br>
+						<h3>Bateria 2: Loop, zigue-zague, curva de 90°, parada final;</h3><br>
+						<h3>Bateria 3: Rotatória, curva de 90°, zigue-zague, faixa de pedestre, parada final;</h3>
+					</div>
+				</div> -->
+			</div>
+
+			<div id="Baterias" style="padding-top: 100px;">
+				<div class="alert alert-success bg-dark">
+					<h3 class="text-center text-light">BATERIAS</h3>
+				</div>
+				<div class="row">
+					<div class="col-4 text-light" style="padding: 40px;">
+						<img class="img-fluid img-thumbnail" src="../../img/fotos2019/bateria1.jpg" alt="Bateria 1">
+						<h3 class="text-justify">Bateria 1: Loop, zigue-zague, parada final.</h3>
+					</div>
+					<div class="col-4 text-light" style="padding: 40px;">
+						<img class="img-fluid img-thumbnail" src="../../img/fotos2019/bateria2.jpg" alt="Bateria 2">
+						<h3 class="text-justify">Bateria 2: Loop, zigue-zague, curva de 90°, parada final.</h3>
+					</div>
+					<div class="col-4 text-light" style="padding: 40px;">
+						<img class="img-fluid img-thumbnail" src="../../img/fotos2019/bateria3.jpg" alt="Bateria 3 slide">
+						<h3 class="text-justify">Bateria 3: Rotatória, curva de 90°, zigue-zague, faixa de pedestre, parada final.</h3>
+					</div>
+				</div>
+			</div>
+
+			<div id="Local" style="padding-top: 100px">
 				<div class="alert alert-success bg-dark">
 					<h3 class="text-center text-light">LOCAL</h3>
 				</div>
@@ -167,9 +236,9 @@
 					</div>
 					<div class="col-sm-2 col-md-2 col-lg-4 col-xl-4"></div>
 				</div>
-			</div><br>
+			</div>
 
-			<div id="Contato">
+			<div id="Contato" style="padding-top: 100px">
 				<div class="alert alert-success bg-dark">
 					<h3 class="text-center text-light">CONTATO</h3>
 				</div>
@@ -196,9 +265,9 @@
 						</div>
 					</div>
 				</div>
-			</div><br>
+			</div>
 
-			<div id="RealizacaoApoioPatrocinio">
+			<div id="Realizacao" style="padding-top: 100px">
 				<div class="alert alert-success bg-dark">
 					<h3 class="text-center text-light">REALIZAÇÃO</h3>
 				</div>
@@ -207,6 +276,33 @@
 					<div class="col-6 text-center">
 						<a class="img-fluid" href="http://www.cpdee.ufmg.br/~petee/" target="_blank"><img class="img-fluid img-dark-theme" src="../../img/logo/logo_petee_branca_900x300.png" alt="PETEE - UFMG"></a>
 						<a class="img-fluid" href="http://www.cpdee.ufmg.br/~petee/" target="_blank"><img class="img-fluid img-light-theme" src="../../img/logo/logo_petee_azul_900x300.png" alt="PETEE - UFMG"></a>
+						<button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#modalEquipe">
+							Veja a equipe organizadora da 6ª CoRA
+						</button>
+
+						<div class="modal fade" id="modalEquipe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLabel">Equipe Organizadora 6ª CoRA</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									</div>
+									<div class="modal-body">
+										<img class="img-fluid img-thumbnail" src="../../img/fotos2019/Equipe2019.JPG">
+										<br><br>
+										<p class="text-justify">Docente: Victor Flores Mendes</p>
+										<p class="text-justify">Discentes: Afonso Henrique Gomes de Souza, Alessandro Magno Cristian Pinheiro, Alice Helena Teixeira Silva, Amanda Andreatta Campolina Moraes, Arthur Henrique Dias Nunes, Ary Vinícius Reis Portes, Diêgo Maradona Gonçalves dos Santos, Giovanna Moreira Puppin Zago, Iago Conceição Gregorio, Isabela Braga da Silva, Israel Filipe Silva Amaral, Lorran Pires Venetillo Dutra, Michael Cassemiro Oliveira, Sarah Carine de Oliveira, Thais Ávila Morato, Vítor Gabriel Reis Caitité, Willian Braga da Silva</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+									</div>
+								</div>
+							</div>
+						  </div>
+
+
 					</div>
 					<div class="col-3"></div>
 				</div><br>
@@ -258,7 +354,9 @@
 					</div>
 					<div class="col-1"></div>
 				</div>
-			</div><br>
+			</div>
+
+			<br><br>
 
 		</div>
 
@@ -266,8 +364,8 @@
 			<div class="container-fluid bg-success text-center">
 				<img class="img-fluid" src="../../img/logo/logo_petee_preta_40px.png">
 				<br><br>
-				<p class="text-dark">COPYRIGHT © 2020 PETEE - UFMG</p>
-				<p class="text-dark">Arthur Nunes</p>
+				<p>COPYRIGHT © 2020 PETEE - UFMG</p>
+				<p>Arthur Nunes</p>
 				<br>
 			</div>
 			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

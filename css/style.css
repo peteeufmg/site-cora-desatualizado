@@ -1,9 +1,17 @@
-﻿.img-dark-theme{
-
+﻿html{
+    scroll-behavior: smooth;
 }
 
+nav{
+    min-height: 80px;
+}
+
+.img-dark-theme{
+
+}
 .img-light-theme{
     display: none;
 }
+
 
 
