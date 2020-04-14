@@ -13,5 +13,11 @@ nav{
     display: none;
 }
 
+.my_text-always-light {
+    color: #f8f9fa !important;
+  }
 
+a.my_text-always-light:hover, a.my_text-always-light:focus {
+    color: #cbd3da !important;
+}
 
