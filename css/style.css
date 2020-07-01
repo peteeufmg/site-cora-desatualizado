@@ -42,7 +42,8 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 #cora-virtual .card-body .fas{
@@ -52,7 +53,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 }
 
 #cora-virtual h2{
-	font-size: 24px;
+	font-size: 27px;
 }
 
 #cora-virtual .card h3{
@@ -78,3 +79,45 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 #cora-virtual .info .card-body{
 	margin: 10px;
 }
+
+/*contato*/
+	.contato{
+		text-align: center;
+		padding-top: 20px;
+	}
+	
+	.contato p{
+		color: #28A745;
+		transition: color 0.5s;
+	}
+	
+	.icone-contato{
+		font-size: 24px;
+		/*color: #343A40;*/
+		color: #FFFFFF;
+		margin-bottom: 20px;
+		background-color: #28A745;
+		/*transition: background-color 0.5s,
+					color 0.5s;*/
+		transition: background-color 0.5s;
+	}
+	
+	.contato:hover .icone-contato{
+		background-color: #218838;
+		/*color: #23272B;*/
+	}
+	
+	.contato:hover p{
+		color: #218838;
+		text-decoration: underline;
+	}
+	
+	.meulink{
+		color: #28A745;
+		transition: color 0.5s;
+	}
+	
+	.meulink:hover{
+		color: #218838;
+		text-decoration: underline;
+	}
