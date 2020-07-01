@@ -44,26 +44,27 @@
 				</a>
 				<div id="navbarSupportedContent" class="collapse navbar-collapse" >
 					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link h4 my_text-always-light" href="#">Home</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link h4 my_text-always-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CoRA 2020</a>
+							<div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item h4" href="#cora-virtual">CoRA Virtual</a>
+								<a class="dropdown-item h4" href="#comoparticipar">Como participar?</a>
+								<a class="dropdown-item h4" href="#premiacao">Premiação</a>
+								<a class="dropdown-item h4" href="#informacoes">Informações</a>
+								<!-- <a class="dropdown-item h4" href="#Local">Local</a> -->
+							</div>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link h4 my_text-always-light" href="antigos/2019/2019.html">Edição 2019</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link h4 my_text-always-light" href="http://www.petee.cpdee.ufmg.br/" target="_blank">PETEE UFMG</a>
+							<a class="nav-link h4 my_text-always-light" href="#Contato">Contato</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link h4 my_text-always-light" href="#Apoio">Parceiros</a>
 						</li>
-						  <li class="nav-item dropdown">
-							<a class="nav-link h4 my_text-always-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evento</a>
-							<div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item h4" href="#Informacoes">Informações</a>
-								<a class="dropdown-item h4" href="#Premiacoes">Premiações</a>
-								<!-- <a class="dropdown-item h4" href="#Local">Local</a> -->
-								<a class="dropdown-item h4" href="#Contato">Contato</a>
-							</div>
+						<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="antigos/2019/2019.html">CoRA 2019</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link h4 my_text-always-light" href="http://www.petee.cpdee.ufmg.br/" target="_blank">PETEE UFMG</a>
 						</li>
 					</ul>
 				</div>
@@ -193,193 +194,231 @@
 					<h4>Estamos trabalhando para adaptarmos o evento a uma versão online este ano. O formato do evento e o Edital serão disponibilizados em breve!</h4>
 				</div>
 			</div> -->
-
-			<div class="card-deck" style="padding-top: 100px; margin-top: 50px" id="Informacoes">
-				<div class="card pilar bg-dark">
-					<div class="card-body text-center">
-						<i class="fas fa-video text-success display-1"></i>
-						<h3 class="card-title text-light">PREPARE-SE</h3>
-						<p class="card-text text-light">Junte sua equipe e grave um pitch sobre seu projeto na área da Robótica.</p>
+			
+			
+			<!--THAIS-->
+			<div id="cora-virtual" style="padding-top: 96px; margin-left: 7%; margin-right:7%">
+				<div class="row justify-content-center text-center">
+					<div class="col-auto">
+						<h1 class="text-light titulo rounded-pill bg-success">CoRA Virtual</h1>
 					</div>
-					<div class="card-footer text-center">
-
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infopreparese">
-							<i class="fas fa-info"></i>
-						</button>
-
-						<div class="modal fade" id="infopreparese" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header bg-success text-light">
-										<h5 class="modal-title" id="exampleModalLabel">Vídeo Pitch</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
+				</div>
+				<div class="row justify-content-center">
+					<i class="text-light fas fa-robot" style="font-size: 24px; margin-top: 10px;"></i>
+				</div>
+				<div class="row justify-content-center text-center">
+					<div class="col-md-9 col-sm-12">
+						<p class="text-light" style="margin-top: 30px; margin-bottom: 0px;">Devido à situação atípica do ano de 2020, a CoRA foi adaptada para um modelo remoto: a CoRA Virtual. O evento é gratuito e destinado a interessados por Robótica de todas as idades e níveis de conhecimento.</p>
+					</div>
+				</div>
+				
+				<!-- como participar -->
+				<div id="comoparticipar" class="row justify-content-center text-center" style="padding-top: 96px;">
+					<div class="col-auto">
+						<h2 class="text-light titulo rounded-pill bg-success" style="margin-top: 20px">como participar?</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-md-11 col-sm-12">
+						<div class="card-deck" style="margin-top: 30px">
+							<!-- card prepare-se -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<i class="fas fa-video text-success"></i>
+									<h3 class="card-title text-light">PREPARE-SE</h3>
+									<p class="card-text text-light">Junte sua equipe e grave um vídeo pitch sobre seu projeto relacionado à Robótica</p>
+								</div>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infopreparese">
+										<i class="fas fa-info"></i>
+									</button>
+									<div class="modal fade" id="infopreparese" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-success text-light">
+													<h5 class="modal-title" id="exampleModalLabel">Vídeo Pitch</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-justify">
+													<h4 class="text-center">O vídeo deve:</h4>
+													<p>Ter de 2 a 4 minutos;</p>
+													<p>Estar no formato pitch sobre seu projeto;</p>
+													<p>Não exceder 1GB.</p>
+													<h4 class="text-center">Recomendamos que o vídeo:</h4>
+													<p>Esteja nos formatos .mp4, .mkv, .mov ou nos aceitos pelo YouTube e Instagram;</p>
+													<p>Apresente brevemente o grupo em questão;</p>
+													<p>Contenha uma pequena introdução/explicação sobre o tema;</p>
+													<p>Demonstre o protótipo, o experimento, a pesquisa, o projeto ou afim;</p>
+													<p>Esclareça sobre a relevância ou impacto do seu projeto (para a
+														sociedade, para os desenvolvedores, para a comunidade acadêmica, etc) e
+														suas possíveis aplicações (em indústrias, residências, hospitais, instituições
+														de ensino, etc).</p>
+													<h4 class="text-center">É desejado que:</h4>
+													<p>O vídeo pitch tenha caráter lúdico, didático e interatividade com o público;</p>
+													<p>O projeto possua protótipos, experimentos, questionários ou alguma outra
+														forma de demonstrar os resultados obtidos;</p>
+													<p>O projeto tenha aplicação prática relevante na área de Engenharia,
+														principalmente em áreas de interesse da CoRA, como Robótica, Controle e
+														Automação.</p>
+												</div>									
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="modal-body text-justify">
-										<h4 class="text-center">O vídeo deve:</h4>
-										<p>Ter de 2 a 4 minutos;</p>
-										<p>Estar no formato pitch sobre seu projeto.</p>
-										<p>Não exceder 1GB.</p>
-										<h4 class="text-center">Recomendamos que o vídeo:</h4>
-										<p>Esteja nos formatos mp4, mkv, mov ou nos aceitos pelo YouTube e Instagram;</p>
-										<p>Apresente brevemente do grupo em questão;</p>
-										<p>Contenha uma pequena introdução/explicação sobre o tema;</p>
-										<p>Demonstre o protótipo, o experimento, a pesquisa, o projeto ou afim;</p>
-										<p>Esclareça sobre a relevância ou impacto do seu projeto (para a
-											sociedade, para os desenvolvedores, para a comunidade acadêmica, etc) e
-											suas possíveis aplicações (em indústrias, residências, hospitais, instituições
-											de ensino, etc).</p>
-										<h4 class="text-center">É desejado que:</h4>
-										<p>O vídeo pitch tenha caráter lúdico, didático e interatividade com o público;</p>
-										<p>O projeto possua protótipos, experimentos, questionários ou alguma outra
-											forma de demonstrar os resultados obtidos;</p>
-										<p>O projeto tenha aplicação prática relevante na área de Engenharia,
-											principalmente em áreas de interesse da CoRA, como Robótica, Controle e
-											Automação.</p>
-									</div>									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+								</div>
+							</div>
+							<!-- card inscreva-se -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<i class="fas fa-sign-in-alt text-success"></i>
+									<h3 class="card-title text-light">INSCREVA-SE</h3>
+									<p class="card-text text-light">Preencha o formulário de inscrição neste site para enviar seu vídeo e participar da CoRA Virtual</p>
+								</div>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoinscrevase">
+										<i class="fas fa-info"></i>
+									</button>
+									<div class="modal fade" id="infoinscrevase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-success text-light">
+													<h5 class="modal-title" id="exampleModalLabel">Inscrições</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-justify">
+													<h4 class="text-center">Para se inscrever você vai precisar de:</h4>
+													<p>Nome do projeto, nome completo e contato de todos os participantes 
+													(não haverá limite de participantes por projeto), um representante entre os
+													inscritos (que terá contato direto via e-mail com o PETEE), 
+													seu vídeo pitch e os Termos de Autorização de Uso de Imagem assinados.
+													Para preencher o formulário é necessário estar logado em uma conta do Google.</p>
+												</div>									
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- card concorra -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<i class="fas fa-medal text-success"></i>
+									<h3 class="card-title text-light">CONCORRA</h3>
+									<p class="card-text text-light">O evento conta com diferentes categorias, a fim de abraçar e premiar diferentes projetos, e premiações extras</p>
+								</div>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoconcorra">
+										<i class="fas fa-info"></i>
+									</button>
+									<div class="modal fade" id="infoconcorra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-success text-light">
+													<h5 class="modal-title" id="exampleModalLabel">Categorias e Premiações Extras</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-justify">
+													<h4 class="text-center">Categorias:</h4>
+													<p>Projeto Acadêmico;</p>
+													<p>Projeto Caseiro;</p>
+													<p>Projeto Mirim;</p>
+													<p>Impacto Social.</p>
+													<h4 class="text-center">Premiações Extras:</h4>
+													<p>Mais Popular;</p>
+													<p>Melhor Produção.</p>
+												</div>									
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body text-center">
-						<i class="fas fa-sign-in-alt text-success display-1"></i>
-						<h3 class="card-title text-light">INSCREVA-SE</h3>
-						<p class="card-text text-light">Prencha os dados do seu time e envie seu vídeo para participar da CoRA Virtual gratuitamente.</p>
-					</div>
-					<div class="card-footer text-center">
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoinscrevase">
-							<i class="fas fa-info"></i>
-						</button>
-
-						<div class="modal fade" id="infoinscrevase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header bg-success text-light">
-										<h5 class="modal-title" id="exampleModalLabel">Inscrições</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body text-justify">
-										<h4 class="text-center">Para se inscrever você vai precisar de:</h4>
-										<p>Nome do projeto, nome completo e contato de todos os
-											participantes (não haverá limite de participantes por projeto), um representante entre os inscritos, que terá contato direto via e-mail com o PETEE, seu vídeo pitch e o direito do grupo PETEE UFMG de divulgação do mesmo através dos Termos de Autorização de Uso de Imagem assinados. Para preencher o formulário é necessário estar logado em uma conta do Google.</p>
-									</div>									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+				<div class="row justify-content-center">
+					<div class="col-md-8 col-sm-12">
+						<div class="card-deck" style="margin-top: 30px">
+							<!-- card acompanhe -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<i class="fas fa-hashtag text-success"></i>
+									<h3 class="card-title text-light">ACOMPANHE</h3>
+									<p class="card-text text-light">Assista à live de divulgação dos resultados nos canais oficiais do PETEE UFMG. Compartilhe seu vídeo para ganhar curtidas e concorrer a prêmios!</p>
+								</div>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoacompanhe">
+										<i class="fas fa-info"></i>
+									</button>
+									<div class="modal fade" id="infoacompanhe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-success text-light">
+													<h5 class="modal-title" id="exampleModalLabel">Plataformas oficiais</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-justify">
+													<h4 class="text-center">Acompanhe o evento:</h4>
+													<p>Por este site (cora.cpdee.ufmg.br);</p>
+													<p>Pelo YouTube (<a href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw" target="_blank">PETEE UFMG</a>);</p>
+													<p>E, principalmente, pelo Instagram (<a href="https://www.instagram.com/petee.ufmg/" target="_blanck">@petee.ufmg</a>).</p>
+													<h4 class="text-center">Live de divulgação dos resultados:</h4>
+													<h4 class="text-center">26/09/2020</h4>
+													<p>Assista através de qualquer uma das plataformas mencionadas.</p>
+												</div>									
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body text-center">
-						<i class="fas fa-trophy text-success display-1"></i>
-						<h3 class="card-title text-light">CONCORRA</h3>
-						<p class="card-text text-light">Fizemos categorias para atendermos todas as idades e níveis de robótica. Concorra ao prêmio da sua categoria e aos prêmios de Melhor Produção e Mais Popular.</p>
-					</div>
-					<div class="card-footer text-center">
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoconcorra">
-							<i class="fas fa-info"></i>
-						</button>
-
-						<div class="modal fade" id="infoconcorra" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header bg-success text-light">
-										<h5 class="modal-title" id="exampleModalLabel">Categorias e Premiações</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body text-justify">
-										<h4 class="text-center">Categorias:</h4>
-										<p>Impacto Social;</p>
-										<p>Projeto Acadêmico;</p>
-										<p>Projeto Mirim;</p>
-										<p>Projeto Caseiro;</p>
-										<h4 class="text-center">Premiações Extras:</h4>
-										<p>Melhor Produção;</p>
-										<p>Mais Popular.</p>
-									</div>									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-									</div>
+							<!-- card comemore -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<i class="fas fa-glass-cheers text-success"></i>
+									<h3 class="card-title text-light">COMEMORE</h3>
+									<p class="card-text text-light">Comemore com sua equipe o prêmio adquirido e a divulgação do projeto de vocês!</p>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body text-center">
-						<i class="fas fa-hashtag text-success display-1"></i>
-						<h3 class="card-title text-light">ACOMPANHE</h3>
-						<p class="card-text text-light">Veja o evento e a live de divulgação dos resultados nos canais oficiais do PETEE UFMG.</p>
-					</div>
-					<div class="card-footer text-center">
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infoacompanhe">
-							<i class="fas fa-info"></i>
-						</button>
-
-						<div class="modal fade" id="infoacompanhe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header bg-success text-light">
-										<h5 class="modal-title" id="exampleModalLabel">Acompanhe o Evento</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body text-justify">
-										<h4 class="text-center">Acompanhe o evento:</h4>
-										<p>Nesse site</p>
-										<a href="https://www.instagram.com/petee.ufmg/?hl=pt-br" target="_blank"><p style="color:black;"><i class="fab fa-instagram"></i>@petee.ufmg </p></a>
-										<a href="https://www.youtube.com/channel/UCwyWA8kHfFoJq6nnlEeC3xw" target="_blank"><p style="color:black;"><i class="fab fa-youtube"></i>PETEE UFMG</p></a>
-									</div>									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body text-center">
-						<i class="fas fa-glass-cheers text-success display-1"></i>
-						<h3 class="card-title text-light">COMEMORE</h3>
-						<p class="card-text text-light">Comemore com sua equipe o prêmio adquirido e a divulgação do projeto de vocês.</p>
-					</div>
-					<div class="card-footer text-center">
-						<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infocomemore">
-							<i class="fas fa-info"></i>
-						</button>
-
-						<div class="modal fade" id="infocomemore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-header bg-success text-light">
-										<h5 class="modal-title" id="exampleModalLabel">Resultados</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-											<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body text-justify">
-										<h4 class="text-center">Resultados Finais Divulgados em 26/09/2020</h4>
-									</div>									
-									<div class="modal-footer">
-										<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+								<div class="card-footer text-center">
+									<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#infocomemore">
+										<i class="fas fa-info"></i>
+									</button>
+									<div class="modal fade" id="infocomemore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg" role="document">
+											<div class="modal-content">
+												<div class="modal-header bg-success text-light">
+													<h5 class="modal-title" id="exampleModalLabel">CoRA Virtual</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body text-justify">
+													<h4 class="text-center">Muito mais que um prêmio:</h4>
+													<p>Nos ajude a disponibilizar e divulgar projetos de Robótica 
+													para a comunidade, a fim de estimular o interesse pela área
+													e incentivar projetistas pelo Brasil!</p>
+												</div>									
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -387,54 +426,303 @@
 					</div>
 				</div>
 				
+				<!-- premiação -->
+				<div id="premiacao" class="row justify-content-center text-center" style="padding-top: 96px;">
+					<div class="col-auto">
+						<h2 class="text-light titulo rounded-pill bg-success" style="margin-top: 20px">premiação</h2>
+					</div>
+				</div>
+				<!-- categorias -->
+				<div class="row justify-content-center">
+					<div class="col-md-6 col-sm-12 text-center">
+						<h2 class="text-light titulo bg-success rounded" style="margin-top: 30px; margin-bottom:10px">categorias</h2>
+						<div class="row justify-content-center">
+							<!-- projeto acadêmico -->
+							<div class="col-md-6" style="margin-top: 15px;">
+								<i class="fas fa-trophy text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Projeto Acadêmico
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premioacademico">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premioacademico" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Projeto Acadêmico</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>Essa categoria abrange projetos de Robótica a nível 
+												técnico, médio, de graduação, de pós-graduação, de âmbito 
+												acadêmico ou de âmbito industrial. Nela, entram projetos técnicos 
+												feitos por estudantes para alguma disciplina, projetos feitos 
+												em atividades de extensão, projetos de pesquisas científicas, 
+												projetos industriais, dentre outros.</p>
+												<p><b>Avaliação:</b> o grupo PETEE irá declarar os finalistas de cada categoria, 
+												que serão definidos previamente em avaliação interna do grupo. Cada categoria 
+												poderá ter até 3 (três) finalistas. Durante a semana do evento, os vídeos 
+												serão votados pelo público em suas categorias. A votação será contabilizada 
+												pelo número de curtidas no vídeo pitch publicado no Instagram do PETEE UFMG 
+												no período especificado.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- projeto caseiro -->
+							<div class="col-md-6" style="margin-top: 15px;">
+								<i class="fas fa-trophy text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Projeto Caseiro
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premiocaseiro">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premiocaseiro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Projeto Caseiro</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>A categoria abrange projetos feitos com materiais simples 
+												e de fácil acesso, desenvolvidos de forma autônoma, sem apoio 
+												de uma instituição de ensino. Serão levados em consideração: 
+												otimização dos materiais disponíveis, criatividade no desenvolvimento, 
+												clareza na explicação e motivação por trás do projeto.</p>
+												<p><b>Avaliação:</b> o grupo PETEE irá declarar os finalistas de cada categoria, 
+												que serão definidos previamente em avaliação interna do grupo. Cada categoria 
+												poderá ter até 3 (três) finalistas. Durante a semana do evento, os vídeos 
+												serão votados pelo público em suas categorias. A votação será contabilizada 
+												pelo número de curtidas no vídeo pitch publicado no Instagram do PETEE UFMG 
+												no período especificado.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- projeto mirim -->
+							<div class="col-md-6" style="margin-top: 15px;">
+								<i class="fas fa-trophy text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Projeto Mirim
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premiomirim">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premiomirim" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Projeto Mirim</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>Crianças e pré-adolescentes de até 13 anos que estão 
+												iniciando na área de Robótica terão seus projetos avaliados 
+												na categoria Projeto Mirim, visando um formato de inclusão de 
+												todas as idades. Nessa categoria, levaremos em consideração a 
+												criatividade do projeto e clareza no vídeo.</p>
+												<p><b>Avaliação:</b> o grupo PETEE irá declarar os finalistas de cada categoria, 
+												que serão definidos previamente em avaliação interna do grupo. Cada categoria 
+												poderá ter até 3 (três) finalistas. Durante a semana do evento, os vídeos 
+												serão votados pelo público em suas categorias. A votação será contabilizada 
+												pelo número de curtidas no vídeo pitch publicado no Instagram do PETEE UFMG 
+												no período especificado.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- impacto social -->
+							<div class="col-md-6" style="margin-top: 15px;">
+								<i class="fas fa-trophy text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Impacto Social
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premioimpacto">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premioimpacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Impacto Social</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>Estão inclusos nessa categoria projetos que se configuram como
+													possíveis soluções de problemas sociais. Nela, será levado em 
+													consideração o impacto social que este projeto proporciona, além de como 
+													ele foi apresentado no vídeo. Pontos importantes na avaliação serão: 
+													a clareza na explicação, motivação e alcance do projeto, sua viabilidade 
+													e aplicabilidade.</p>
+												<p><b>Avaliação:</b> o grupo PETEE irá declarar os finalistas de cada categoria, 
+												que serão definidos previamente em avaliação interna do grupo. Cada categoria 
+												poderá ter até 3 (três) finalistas. Durante a semana do evento, os vídeos 
+												serão votados pelo público em suas categorias. A votação será contabilizada 
+												pelo número de curtidas no vídeo pitch publicado no Instagram do PETEE UFMG 
+												no período especificado.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- premiações extras -->
+					<div class="col-md-6 col-sm-12 text-center">
+						<h2 class="text-light titulo bg-success rounded" style="margin-top: 30px; margin-bottom:10px">premiações extras</h2>
+						<div class="row justify-content-center">
+							<!-- mais popular -->
+							<div class="col-md-12" style="margin-top: 15px;">
+								<i class="fas fa-award text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Mais Popular
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premiopopular">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premiopopular" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Mais Popular</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>Vídeo que obteve maior engajamento durante o evento. Nesta categoria, 
+												somente os projetos que não são finalistas de nenhuma das categorias irão 
+												participar.</p>
+												<p><b>Avaliação:</b> O projeto vencedor será decidido exclusivamente pela interação 
+												do público, através da contagem de curtidas no vídeo publicado no IGTV, 
+												canal de conteúdo dentro da plataforma Instagram do PETEE.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- melhor produção -->
+							<div class="col-md-12" style="margin-top: 15px;">
+								<i class="fas fa-award text-success" style="font-size: 36px; padding: 20px"></i>
+								<h5 class="text-light">Melhor Produção
+									<button type="button" class="btn btn-success btn-sm" style="margin-left:5px" data-toggle="modal" data-target="#premioproducao">
+										<i class="fas fa-info"></i>
+									</button>
+								</h5>
+								<p class="text-light">a definir</p>
+								<div class="modal fade" id="premioproducao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header bg-success text-light">
+												<h5 class="modal-title" id="exampleModalLabel">Melhor Produção</h5>
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body text-justify">
+												<p>Para essa premiação, serão destacados os vídeos mais criativos, 
+												com maior qualidade na edição e/ou filmagem e visualmente atrativos ao 
+												público do evento. Na qualidade de um vídeo, a manutenção de um conteúdo 
+												bem didático apresentado de forma lúdica também é muito importante.</p>
+												<p><b>Avaliação:</b> Não haverá finalistas. A comissão avaliadora do grupo PETEE 
+												irá escolher o projeto vencedor dessa premiação e esse será anunciado na 
+												transmissão ao vivo.</p>
+											</div>									
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				
+				<!-- informações -->
+				<div id="informacoes" class="row justify-content-center text-center" style="padding-top: 96px;">
+					<div class="col-auto">
+						<h2 class="text-light titulo rounded-pill bg-success" style="margin-top: 20px">informações</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-12">
+						<div class="card-deck info" style="margin-top: 30px">
+							<!-- card edital -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<h3 class="card-title text-light">EDITAL</h3>
+									<p class="card-text text-light">Confira abaixo o edital da CoRA Virtual</p>
+								</div>
+								<div class="card-footer text-center">
+									<a href="./doc/Edital_CoRA_Virtual.pdf" class="btn btn-success btn-block" target="_blank">Edital</a>
+								</div>
+							</div>							
+							<!-- card termos -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<h3 class="card-title text-light">TERMOS</h3>
+									<p class="card-text text-light">Preencha e envie no ato de inscrição, conforme edital</p>
+								</div>
+								<div class="card-footer text-center">
+									<a href="" class="btn btn-success btn-block disabled" target="_blank">Maiores de 18</a>
+									<a href="" class="btn btn-success btn-block disabled" target="_blank">Menores de 18</a>
+								</div>
+							</div>
+							<!-- card incrições -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<h3 class="card-title text-light">INSCRIÇÕES</h3>
+									<p class="card-text text-light">De 03/08/2020 a 24/08/2020</p>
+								</div>
+								<div class="card-footer text-center">
+									<a href="" class="btn btn-success btn-block disabled" target="_blank">Formulário</a>
+								</div>
+							</div>
+							<!-- card cronograma -->
+							<div class="card bg-dark">
+								<div class="card-body text-center">
+									<h3 class="card-title text-light">CRONOGRAMA</h3>
+									<p class="card-text text-light">Confira abaixo o cronograma da CoRA Virtual</p>
+								</div>
+								<div class="card-footer text-center">
+									<a href="doc/Cronograma_CoRA_Virtual.pdf" target="_blank" class="btn btn-success btn-block">Cronograma</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>				
 			</div>
-
-			<!-- Botoes principais -->
-			<div class="card-deck" style="padding-top: 100px; margin-top: 50px" id="BotoesPrincipais">
-				
-				<div class="card pilar bg-dark">
-					<div class="card-body">
-						<h2 class="card-title text-light text-center">INSCRIÇÕES</h2>
-						<p class="card-text text-light text-center">De 03/08/2020 à 24/08/2020</p>
-					</div>
-					<div class="card-footer text-center">
-						<a href="" class="btn btn-success btn-block disabled" target="_blank">Formulário</a>
-					</div>
-				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body">
-						<h2 class="card-title text-light text-center">TERMOS</h2>
-						<p class="card-text text-light text-center">Preencha os termos de autorização de imagem, como descritos no edital, e os envie no ato da inscrição</p>
-					</div>
-					<div class="card-footer text-center">
-						<a href="" class="btn btn-success btn-block disabled" target="_blank">Maiores de 18</a>
-						<a href="" class="btn btn-success btn-block disabled" target="_blank">Menores de 18</a>
-					</div>
-				</div>
-				
-				<div class="card pilar bg-dark">
-					<div class="card-body">
-						<h2 class="card-title text-light text-center">EDITAL</h2>
-						<p class="card-text text-light text-center">Confira abaixo o edital da CoRA Virtual</p>
-					</div>
-					<div class="card-footer text-center">
-						<a href="./doc/Edital_CoRA_Virtual.pdf" class="btn btn-success btn-block" target="_blank">Edital</a>
-					</div>
-				</div>
-
-				<div class="card pilar bg-dark">
-					<div class="card-body">
-						<h2 class="card-title text-light text-center">CRONOGRAMA</h2>
-						<p class="card-text text-light text-center">Confira abaixo o cronograma da CoRA Virtual</p>
-					</div>
-					<div class="card-footer text-center">
-						<a href="doc/Cronograma_CoRA_Virtual.pdf" target="_blank" class="btn btn-success btn-block">Cronograma</a>
-					</div>
-				</div>
-				
-			</div>
+			<!--FIM THAIS-->
 
 			<!-- <div id="BotoesPrincipais" style="padding-top: 100px;">
 				<div class="row">
@@ -471,190 +759,6 @@
 					</div>
 				</div>
 			</div> -->
-
-			<div id="Premiacoes" style="padding-top: 100px;">
-				<div class="alert alert-success bg-dark">
-					<h3 class="text-center text-light">PREMIAÇÕES</h3>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-3">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-trophy text-success display-1"></i>
-							<h3 class="text-light">Impacto Social</h3>
-
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premioimpacto">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premioimpacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Impacto Social</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>Estão inclusos nessa categoria projetos que se configuram como
-												possíveis soluções de problemas sociais. Nela, será levado em consideração o impacto social que este projeto proporciona, além de como ele foi apresentado no vídeo. Pontos importantes na avaliação serão: a clareza na explicação, motivação e alcance do projeto, sua viabilidade e aplicabilidade.</p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-trophy text-success display-1"></i>
-							<h3 class="text-light">Projeto Acadêmico</h3>
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premioacademico">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premioacademico" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Projeto Acadêmico</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>Essa categoria abrange projetos de robótica a nível técnico, médio, de graduação, de pós-graduação, de âmbito acadêmico ou de âmbito industrial. Nela, entram projetos técnicos feitos por estudantes para alguma disciplina, projetos feitos em atividades de extensão, projetos de pesquisas científicas, projetos industriais, dentre outros.</p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-trophy text-success display-1"></i>
-							<h3 class="text-light">Projeto Mirim</h3>
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premiomirim">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premiomirim" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Projeto Mirim</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>Crianças e pré-adolescentes de até 13 anos que estão iniciando na área de robótica terão seus projetos avaliados na categoria Robótica Mirim, visando	um formato de inclusão de todas as idades. Nessa categoria, levaremos em consideração a criatividade do projeto e clareza no vídeo. </p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-3">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-trophy text-success display-1"></i>
-							<h3 class="text-light">Projeto Caseiro</h3>
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premiocaseiro">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premiocaseiro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Projeto Caseiro</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>A categoria abrange projetos feitos com materiais simples e de fácil acesso, desenvolvidos de forma autônoma, sem apoio de uma instituição de ensino. Serão levados em consideração: otimização dos materiais disponíveis, criatividade no desenvolvimento, clareza na explicação e motivação por trás do projeto.</p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-6">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-award text-success display-1"></i>
-							<h3 class="text-light">Melhor Produção</h3>
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premioproducao">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premioproducao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Melhor Produção</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>Para essa premiação, serão destacados os vídeos mais criativos, com maior qualidade na edição e/ou filmagem e visualmente atrativos ao público do evento. Na qualidade de um vídeo, a manutenção de um conteúdo bem didático apresentado de forma lúdica, também é muito importante.</p>
-											<p>Avaliação: Não haverá finalistas. A comissão avaliadora do grupo PETEE irá escolher o projeto vencedor dessa premiação e esse será anunciado na transmissão ao vivo.</p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-					<div class="col-6">
-						<div class="text-center" style="margin: 20px">
-							<i class="fas fa-award text-success display-1"></i>
-							<h3 class="text-light">Mais Popular</h3>
-							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#premiopopular">
-								<i class="fas fa-info"></i>
-							</button>
-							<div class="modal fade" id="premiopopular" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-								<div class="modal-dialog modal-lg" role="document">
-									<div class="modal-content">
-										<div class="modal-header bg-success text-light">
-											<h5 class="modal-title" id="exampleModalLabel">Mais Popular</h5>
-											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-												<span aria-hidden="true">&times;</span>
-											</button>
-										</div>
-										<div class="modal-body text-justify">
-											<p>Vídeo que obteve maior engajamento durante o evento. Nesta categoria, somente os projetos que não são finalistas de nenhuma das categorias irão participar.</p>
-											<p>Avaliação: O projeto vencedor será decidido exclusivamente pela interação do público, através da contagem de curtidas no vídeo publicado no IGTV, canal de conteúdo dentro da plataforma Instagram do PETEE.</p>
-										</div>									
-										<div class="modal-footer">
-											<button type="button" class="btn btn-success" data-dismiss="modal">Fechar</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<p class="text-light">A definir</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
 
 		<!--<div id="Premiacoes" style="padding-top: 100px;">
 				<div class="alert alert-success bg-dark">
