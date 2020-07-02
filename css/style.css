@@ -99,7 +99,7 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 		background-color: #28A745;
 		/*transition: background-color 0.5s,
 					color 0.5s;*/
-		transition: background-color 0.5s;
+		transition: background-color 0.3s;
 	}
 	
 	.contato:hover .icone-contato{
@@ -114,7 +114,6 @@ a.my_text-always-light:hover, a.my_text-always-light:focus {
 	
 	.meulink{
 		color: #28A745;
-		transition: color 0.5s;
 	}
 	
 	.meulink:hover{
