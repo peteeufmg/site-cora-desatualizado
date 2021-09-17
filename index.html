@@ -43,6 +43,25 @@
 
 			gtag('config', 'G-T4WDS0EZ5L');
 		</script>
+		<style>
+			@media only screen and (max-width: 600px){
+	.banner-desktop{
+	  display: none;
+	 }
+  .banner-mobile{
+	  display: block;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .banner-desktop{
+	  display: block;
+  }
+	.banner-mobile{
+	display: none;
+	}
+}
+		</style>
 
 	</head>
 
@@ -97,7 +116,7 @@
 		<!-- banner -->
 		<div id="banner" class="container-fluid" style="padding-top: 90px">
 			<!-- BANNER DESKTOP -->
-			<div id="carousel-banner-desktop" class="carousel slide banner-desktop" data-ride="carousel" data-interval="10000">
+			<div id="carousel-banner-desktop" class="carousel slide " data-ride="carousel" data-interval="10000">
 			  <ol class="carousel-indicators">
 				<li data-target="#carousel-banner-desktop" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel-banner-desktop" data-slide-to="1"></li>
@@ -154,8 +173,10 @@
 				<span class="sr-only">Next</span>
 			  </a>
 			</div>
+			
+			<div style="margin-top: -20%;" class="banner-mobile"></div>
 			<!-- BANNER MOBILE -->
-			<div id="carousel-banner-mobile" class="carousel slide banner-mobile" data-ride="carousel" data-interval="10000">
+			<!-- <div id="carousel-banner-mobile" class="carousel slide banner-mobile" data-ride="carousel" data-interval="10000">
 			  <ol class="carousel-indicators">
 				<li data-target="#carousel-banner-mobile" data-slide-to="0" class="active"></li>
 				<li data-target="#carousel-banner-mobile" data-slide-to="1"></li>
@@ -208,11 +229,11 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				<span class="sr-only">Next</span>
 			  </a>
-			</div>
+			</div> -->
 		</div>
 		
 		<!--videos do evento-->
-		<div id="assistir" class="container-fluid row justify-content-center text-center" style="padding-top: 96px;">
+		<!-- <div id="assistir" class="container-fluid row justify-content-center text-center" style="padding-top: 96px;">
 			<div class="col-auto">
 				<h2 class="text-light titulo">ASSISTA AO EVENTO</h2>
 			</div>
@@ -224,19 +245,19 @@
 				<h4 class="text-light">Projetos participantes</h4>
 				<p class="text-light">Disponível a partir de 17/09</p>
 				<i class="fab fa-youtube display-1 text-light"></i>
-				<!-- <div class="iframe-container">
+				 <div class="iframe-container">
 					<iframe class="iframe-fluid" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div> -->
+				</div> 
 			</div>
 			<div class="col-sm-12 col-md-12 col-lg-6">
 				<h4 class="text-light">Live de encerramento</h4>
 				<p class="text-light">Disponível em 25/09</p>
 				<i class="fab fa-youtube display-1 text-light"></i>
-				<!-- <div class="iframe-container">
+				<div class="iframe-container">
 					<iframe class="iframe-fluid" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div> -->
+				</div> 
 			</div>
-		</div>
+		</div> -->
 
 		<div id="Principal" class="container-fluid bg-dark">
 
